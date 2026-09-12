@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyansh Bhatnagar | B.Tech 1st Year Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Divyansh Bhatnagar - 1st Year B.Tech Computer Science & Engineering Student. Showcasing Education, Skills, Projects, and Achievements." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-symbol">&lt;</span>Divyansh<span class="logo-accent">.dev</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle Button -->
+        <button id="theme-toggle" class="icon-btn theme-btn" aria-label="Toggle Theme" title="Switch between Dark and Light mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="nav-toggle" class="icon-btn hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= 1. HOME / HERO SECTION ================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>B.Tech 1st Year (CSE) • 2025 - 2029</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Divyansh Bhatnagar</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">I am an </span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Enthusiastic first-year Computer Science & Engineering undergraduate with a passion for
+            problem solving in <strong>C/C++</strong>, fundamental data structures, and crafting responsive
+            web experiences. Always curious, eager to learn, and ready to take on engineering challenges.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#achievements" class="btn btn-primary">
+              <span>View Achievements</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+            </a>
+            <button class="btn btn-outline" id="cv-btn" title="Download Resume / Bio-Data">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV</span>
+            </button>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="social-links-bar">
+            <span class="social-label">Find Me Online:</span>
+            <div class="social-icons">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode" title="LeetCode Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </a>
+              <a href="mailto:divyansh.bhatnagar.cse@example.com" class="social-icon" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Card / Profile Display -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-card-header">
+              <div class="mac-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-snippet-tag">terminal@divyansh:~</span>
+            </div>
+            
+            <div class="profile-avatar-wrapper">
+              <div class="avatar-ring">
+                <div class="avatar-placeholder">
+                  <span class="avatar-initials">DB</span>
+                </div>
+              </div>
+              <div class="avatar-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Active Learner</span>
+              </div>
+            </div>
+
+            <div class="profile-info-text">
+              <h3>Divyansh Bhatnagar</h3>
+              <p>B.Tech CSE • Class of 2029</p>
+            </div>
+
+            <!-- Quick Metrics Grid -->
+            <div class="profile-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">1st</span>
+                <span class="stat-title">Year CSE</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">150+</span>
+                <span class="stat-title">DSA Problems</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">9.1</span>
+                <span class="stat-title">Current GPA</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">5+</span>
+                <span class="stat-title">Mini Projects</span>
+              </div>
+            </div>
+
+            <div class="terminal-banner">
+              <span class="terminal-prompt">$</span> <code>gcc main.c &amp;&amp; ./a.out</code>
+              <span class="terminal-output">"Hello, World! Building the future..."</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 2. ABOUT ME SECTION ================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Introduction</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            Get to know my engineering journey, what motivates me, and how I spend my time outside lectures.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story / Bio -->
+          <div class="about-bio-card">
+            <h3 class="bio-heading">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+                <path d="M6 6h10"></path>
+                <path d="M6 10h10"></path>
+              </svg>
+              My Engineering Story
+            </h3>
+            <p>
+              Ever since I wrote my first <em>"Hello World"</em> program in high school, I have been deeply fascinated by how lines of code can create software used by millions. Securing admission into <strong>B.Tech Computer Science and Engineering</strong> was a major milestone toward turning this curiosity into an engineering career.
+            </p>
+            <p>
+              As a first-year student, I focus on building rock-solid foundations: mastering <strong>C programming</strong>, grasping the internal mechanics of memory management and pointers, understanding Discrete Mathematics, and sharpening my algorithmic thinking. I believe that a great engineer is defined by fundamental clarity and persistent curiosity.
+            </p>
+            <p>
+              When I am not attending classes or solving coding exercises, you will find me participating in college hackathons, contributing to student tech societies, or experimenting with frontend web development.
+            </p>
+
+            <div class="bio-highlights">
+              <div class="highlight-item">
+                <span class="hl-check">✔</span>
+                <span>Strong academic drive &amp; conceptual curiosity</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-check">✔</span>
+                <span>Active member of the College Coding &amp; Robotics Club</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-check">✔</span>
+                <span>Regular participant in weekend coding contests</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-check">✔</span>
+                <span>Always eager for collaborative team projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Specs & Personal Info -->
+          <div class="about-details-column">
+            <div class="details-card">
+              <h3 class="details-heading">Quick Information</h3>
+              <ul class="details-list">
+                <li>
+                  <span class="detail-key">Degree:</span>
+                  <span class="detail-val">Bachelor of Technology (B.Tech)</span>
+                </li>
+                <li>
+                  <span class="detail-key">Branch:</span>
+                  <span class="detail-val">Computer Science &amp; Engineering</span>
+                </li>
+                <li>
+                  <span class="detail-key">Current Year:</span>
+                  <span class="detail-val">1st Year (Semester II)</span>
+                </li>
+                <li>
+                  <span class="detail-key">Batch:</span>
+                  <span class="detail-val">2025 - 2029</span>
+                </li>
+                <li>
+                  <span class="detail-key">Location:</span>
+                  <span class="detail-val">New Delhi / Campus Hostel</span>
+                </li>
+                <li>
+                  <span class="detail-key">Languages:</span>
+                  <span class="detail-val">English, Hindi</span>
+                </li>
+                <li>
+                  <span class="detail-key">Core Interests:</span>
+                  <span class="detail-val">DSA, C/C++, Web Dev, Systems</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hobbies & Interests Card -->
+            <div class="details-card hobbies-card">
+              <h3 class="details-heading">Hobbies &amp; Extracurriculars</h3>
+              <div class="hobbies-tags">
+                <span class="hobby-tag">💻 Competitive Coding</span>
+                <span class="hobby-tag">♟️ Chess</span>
+                <span class="hobby-tag">🎧 Tech Podcasts</span>
+                <span class="hobby-tag">🐧 Linux Rice &amp; Scripting</span>
+                <span class="hobby-tag">🏸 Badminton</span>
+                <span class="hobby-tag">📚 Sci-Fi &amp; Non-Fiction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 3. EDUCATION SECTION ================= -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            A chronological timeline of my academic journey and formal coursework.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot current"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge current-badge">Current Degree</div>
+              <div class="timeline-header-group">
+                <h3 class="timeline-degree">Bachelor of Technology (B.Tech) in CSE</h3>
+                <span class="timeline-institution">Apex Institute of Technology &amp; Engineering (Affiliated to State Tech Univ)</span>
+                <span class="timeline-duration">2025 – Present (Expected Graduation: 2029)</span>
+              </div>
+              <div class="timeline-score">
+                <span class="score-label">Current Performance:</span>
+                <span class="score-value">9.1 / 10.0 CGPA</span>
+              </div>
+              <div class="timeline-body">
+                <p><strong>First Year Core Coursework:</strong></p>
+                <div class="course-chips">
+                  <span class="course-chip">Programming for Problem Solving (C)</span>
+                  <span class="course-chip">Engineering Mathematics (Calculus &amp; Linear Algebra)</span>
+                  <span class="course-chip">Basic Electrical &amp; Electronics Engineering</span>
+                  <span class="course-chip">Digital Logic &amp; Computer Organization</span>
+                  <span class="course-chip">Engineering Physics &amp; Lab</span>
+                  <span class="course-chip">Intro to Data Structures &amp; Algorithms</span>
+                </div>
+                <p class="timeline-note">
+                  <strong>Department Involvement:</strong> Active core member of the Department Coding Society; regular attendee of peer study groups and technical seminar series.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Class XII -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge">Senior Secondary</div>
+              <div class="timeline-header-group">
+                <h3 class="timeline-degree">Class XII (Higher Secondary Certificate)</h3>
+                <span class="timeline-institution">Delhi Public Senior Secondary School (CBSE Board)</span>
+                <span class="timeline-duration">Completed: 2025</span>
+              </div>
+              <div class="timeline-score">
+                <span class="score-label">Board Examination Result:</span>
+                <span class="score-value">94.6% Aggregate</span>
+              </div>
+              <div class="timeline-body">
+                <p><strong>Stream:</strong> Science (Physics, Chemistry, Mathematics, Computer Science, English)</p>
+                <div class="course-chips">
+                  <span class="course-chip">Computer Science (Python &amp; SQL): 98/100</span>
+                  <span class="course-chip">Mathematics: 95/100</span>
+                  <span class="course-chip">Physics: 93/100</span>
+                </div>
+                <p class="timeline-note">
+                  <strong>Accomplishment:</strong> Awarded Certificate of Merit in Computer Science for outstanding performance in the CBSE Board Examination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Class X -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-content card">
+              <div class="timeline-badge">Secondary School</div>
+              <div class="timeline-header-group">
+                <h3 class="timeline-degree">Class X (Secondary School Examination)</h3>
+                <span class="timeline-institution">Delhi Public Senior Secondary School (CBSE Board)</span>
+                <span class="timeline-duration">Completed: 2023</span>
+              </div>
+              <div class="timeline-score">
+                <span class="score-label">Board Examination Result:</span>
+                <span class="score-value">96.2% Aggregate</span>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  Comprehensive academic foundation in Science, Mathematics, and Computer Basics.
+                </p>
+                <p class="timeline-note">
+                  <strong>School Honors:</strong> Ranked top 1% across the district; School Science &amp; IT Club President.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 4. SKILLS SECTION ================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">
+            Languages, technologies, and foundational principles I practice daily as a B.Tech student.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">C Language (Pointers, Memory, Structs)</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 88%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">C++ (STL, Problem Solving Basics)</span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 78%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">Python (Scripting &amp; High School CS)</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 82%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">JavaScript (ES6+ Fundamentals)</span>
+                  <span class="skill-percent">65%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 65%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-web">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3>Web Fundamentals</h3>
+            </div>
+
+            <div class="skill-items">
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">HTML5 (Semantic &amp; Accessible)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">CSS3 (Flexbox, Grid, Animations)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">Responsive Web Design</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+              </div>
+
+              <div class="skill-bar-wrapper">
+                <div class="skill-meta">
+                  <span class="skill-name">DOM Manipulation &amp; Fetch API</span>
+                  <span class="skill-percent">68%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 68%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: CS Core & DSA -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-brain">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"></path>
+                  <path d="m4.93 4.93 2.83 2.83"></path>
+                  <path d="M2 12h4"></path>
+                  <path d="m4.93 19.07 2.83-2.83"></path>
+                  <path d="M12 22v-4"></path>
+                  <path d="m19.07 19.07-2.83-2.83"></path>
+                  <path d="M22 12h-4"></path>
+                  <path d="m19.07 4.93-2.83 2.83"></path>
+                </svg>
+              </div>
+              <h3>Computer Science Concepts</h3>
+            </div>
+
+            <div class="skill-tags-group">
+              <div class="skill-chip active-chip">
+                <span class="chip-name">Data Structures (Arrays, Strings, Linked Lists)</span>
+                <span class="chip-badge">Ongoing</span>
+              </div>
+              <div class="skill-chip active-chip">
+                <span class="chip-name">Algorithm Complexity (Big-O Notation)</span>
+                <span class="chip-badge">Strong</span>
+              </div>
+              <div class="skill-chip active-chip">
+                <span class="chip-name">Recursion &amp; Backtracking Basics</span>
+                <span class="chip-badge">Practicing</span>
+              </div>
+              <div class="skill-chip active-chip">
+                <span class="chip-name">Digital Electronics &amp; Binary Logic</span>
+                <span class="chip-badge">Sem Course</span>
+              </div>
+              <div class="skill-chip active-chip">
+                <span class="chip-name">Object-Oriented Concepts (Classes, Encapsulation)</span>
+                <span class="chip-badge">Practicing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Tools & Soft Skills -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Tools &amp; Work Habits</h3>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-badge">
+                <span class="tool-name">Git &amp; GitHub</span>
+                <span class="tool-desc">Version control &amp; repos</span>
+              </div>
+              <div class="tool-badge">
+                <span class="tool-name">Visual Studio Code</span>
+                <span class="tool-desc">Primary IDE &amp; Debugger</span>
+              </div>
+              <div class="tool-badge">
+                <span class="tool-name">GCC &amp; GDB</span>
+                <span class="tool-desc">C Compilation &amp; Debugging</span>
+              </div>
+              <div class="tool-badge">
+                <span class="tool-name">Linux / Bash</span>
+                <span class="tool-desc">Terminal commands &amp; WSL</span>
+              </div>
+              <div class="tool-badge">
+                <span class="tool-name">Team Collaboration</span>
+                <span class="tool-desc">Peer programming &amp; demos</span>
+              </div>
+              <div class="tool-badge">
+                <span class="tool-name">Fast Learner</span>
+                <span class="tool-desc">Self-driven documentation reading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 5. ACHIEVEMENTS SECTION ================= -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Proof of Work</span>
+          <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">
+            Competitions, competitive coding milestones, academic honors, and verified certifications.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="achievements-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Achievements</button>
+          <button class="filter-btn" data-filter="competition">Competitions</button>
+          <button class="filter-btn" data-filter="coding">Coding &amp; Badges</button>
+          <button class="filter-btn" data-filter="certification">Certificates</button>
+          <button class="filter-btn" data-filter="academic">Academics</button>
+        </div>
+
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Card 1: Hackathon Finalist -->
+          <div class="achievement-card" data-category="competition">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag competition-tag">🏆 Hackathon</span>
+              <span class="achievement-year">2025</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon trophy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                  <path d="M4 22h16"></path>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">Freshers' Hackathon 2025 — Top 5 Finalist</h3>
+            <p class="achievement-org">Organized by College Technical Council &amp; Dev Club</p>
+            <p class="achievement-desc">
+              Competed with over 60+ first-year student teams. Designed and demonstrated a functional web-based Campus Study Partner and Notes Sharing prototype within a 24-hour sprint.
+            </p>
+            <div class="achievement-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Rapid Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Card 2: HackerRank 5-Star in C -->
+          <div class="achievement-card" data-category="coding">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag coding-tag">⭐ Coding Badge</span>
+              <span class="achievement-year">2025</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon star">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">5-Star Gold Badge in C Language</h3>
+            <p class="achievement-org">HackerRank Skill Certification</p>
+            <p class="achievement-desc">
+              Earned top-tier 5-Star recognition by solving 100+ rigorous challenges in C programming, demonstrating strong proficiency in pointers, bit manipulation, dynamic arrays, and structures.
+            </p>
+            <div class="achievement-tags">
+              <span>C Language</span>
+              <span>Memory Mgmt</span>
+              <span>HackerRank</span>
+            </div>
+          </div>
+
+          <!-- Card 3: 150+ LeetCode Milestone -->
+          <div class="achievement-card" data-category="coding">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag coding-tag">🔥 Problem Solving</span>
+              <span class="achievement-year">2025</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon code">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m18 16 4-4-4-4"></path>
+                  <path d="m6 8-4 4 4 4"></path>
+                  <path d="m14.5 4-5 16"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">150+ LeetCode Problems Solved</h3>
+            <p class="achievement-org">LeetCode Algorithmic Practice</p>
+            <p class="achievement-desc">
+              Maintained a 50+ day consecutive problem-solving streak across Arrays, Strings, Two-Pointer technique, and HashMaps, focusing on optimal time &amp; space complexity.
+            </p>
+            <div class="achievement-tags">
+              <span>DSA</span>
+              <span>C++</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Card 4: CS50x Harvard Course -->
+          <div class="achievement-card" data-category="certification">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag cert-tag">📜 Certificate</span>
+              <span class="achievement-year">2025</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon cert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">CS50: Intro to Computer Science</h3>
+            <p class="achievement-org">Harvard University (Online edX)</p>
+            <p class="achievement-desc">
+              Completed rigorous coursework covering algorithmic thinking, C memory architecture, data structures (linked lists, tries, hash tables), SQL, and web foundations.
+            </p>
+            <div class="achievement-tags">
+              <span>Computer Science</span>
+              <span>C</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Card 5: FreeCodeCamp Responsive Web Design -->
+          <div class="achievement-card" data-category="certification">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag cert-tag">📜 Certificate</span>
+              <span class="achievement-year">2024</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon cert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"></path>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">Responsive Web Design Certification</h3>
+            <p class="achievement-org">freeCodeCamp (300 hours)</p>
+            <p class="achievement-desc">
+              Built 5 required responsive web applications passing automated test suites, mastering CSS Flexbox, Grid, Media Queries, and Web Accessibility (a11y).
+            </p>
+            <div class="achievement-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Responsive UI</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Academic Olympiad Gold Medal -->
+          <div class="achievement-card" data-category="academic">
+            <div class="card-glow"></div>
+            <div class="card-top">
+              <span class="achievement-category-tag academic-tag">🥇 Academic Honor</span>
+              <span class="achievement-year">2024</span>
+            </div>
+            <div class="achievement-icon-wrapper">
+              <div class="achievement-icon medal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6"></circle>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="achievement-title">State Science &amp; Maths Olympiad (Gold Medal)</h3>
+            <p class="achievement-org">Inter-School Science Talent Search</p>
+            <p class="achievement-desc">
+              Awarded Gold Medal and Certificate of Distinction for securing Rank 1 across the regional zone for exceptional aptitude in Mathematics and Analytical Reasoning.
+            </p>
+            <div class="achievement-tags">
+              <span>Mathematics</span>
+              <span>Analytical Skills</span>
+              <span>Zone Rank 1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= 6. CONTACT SECTION ================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have feedback on my portfolio, want to discuss a project, or just say hello? Drop a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Email Address</h4>
+                <p><a href="mailto:divyansh.bhatnagar.cse@example.com">divyansh.bhatnagar.cse@example.com</a></p>
+                <span class="contact-sub">Always open for inquiries</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Campus &amp; Location</h4>
+                <p>Hostel Block-B, Apex Institute Campus</p>
+                <span class="contact-sub">New Delhi, India</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Professional Network</h4>
+                <p><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/divyansh-bhatnagar-cse</a></p>
+                <span class="contact-sub">Connect with me on LinkedIn</span>
+              </div>
+            </div>
+
+            <div class="professor-note card">
+              <div class="note-header">
+                <span class="note-badge">Academic Submission Note</span>
+              </div>
+              <p>
+                <em>"Prepared with dedication for the B.Tech 1st Year Portfolio Project evaluation. All source code complies with clean coding standards and web accessibility benchmarks."</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Professor Sharma or Jane Doe" required />
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="e.g. prof.sharma@university.edu" required />
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Portfolio Evaluation / Project Feedback" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write your message, guidance, or remarks here..." required></textarea>
+                <span class="error-msg" id="message-error">Please write a brief message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-alert" class="form-alert hidden">
+                <div class="alert-icon">✔</div>
+                <div class="alert-text">Thank you! Your message has been received. I'll get back to you soon.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-symbol">&lt;</span>Divyansh<span class="logo-accent">.dev</span><span class="logo-symbol">/&gt;</span>
+          </a>
+          <p>1st Year B.Tech Computer Science &amp; Engineering Student. Driven to build, solve, and grow.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-connect">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://leetcode.com" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+            <a href="mailto:divyansh.bhatnagar.cse@example.com" aria-label="Email">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Divyansh Bhatnagar. Built with semantic HTML, CSS &amp; JavaScript for B.Tech Portfolio Submission.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"></path>
+          </svg>
+          <span>Top</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Modal for CV Download -->
+  <div id="toast-modal" class="toast-modal hidden">
+    <div class="toast-content">
+      <div class="toast-icon">📄</div>
+      <div class="toast-body">
+        <h4>Resume Preview Ready</h4>
+        <p>Divyansh Bhatnagar — B.Tech 1st Year CSE Resume (Curriculum Vitae). All academic grades and projects included.</p>
+      </div>
+      <button id="close-toast" class="toast-close">&times;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
